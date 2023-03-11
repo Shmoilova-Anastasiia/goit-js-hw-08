@@ -23,3 +23,8 @@ const itemGalleryEl = `<a class="gallery__item" href="${element.original}">
 }).join('')
 galleryEl.innerHTML = makeGallery;
 
+let modal = new SimpleLightbox('.gallery__item', {
+    captionsData:'alt',
+    captionPosition: 'bottom',
+    captionDelay:250,
+});
